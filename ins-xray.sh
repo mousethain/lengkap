@@ -29,8 +29,8 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 # // Exporting URL Host
-export Server_URL="raw.githubusercontent.com/wunuit/test/main"
-export Server1_URL="raw.githubusercontent.com/wunuit/limit/main"
+export Server_URL="raw.githubusercontent.com/mousethain/lengkap/main"
+export Server1_URL="raw.githubusercontent.com/mousethain/limit/main"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
@@ -195,9 +195,9 @@ apt install -y nginx
 cd
 rm -fr /etc/nginx/sites-enabled/default
 rm -fr /etc/nginx/sites-available/default
-wget -q -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/wunuit/1/main/nginx.conf" 
+wget -q -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/mousethain/lengkap/main/nginx.conf" 
 #mkdir -p /home/vps/public_html
-wget -q -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/wunuit/1/main/vps.conf"
+wget -q -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/mousethain/lengkap/main/vps.conf"
 
 # Install Xray #
 #==========#
