@@ -45,12 +45,12 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 # // Exporting URL Host
-export Server_URL="raw.githubusercontent.com/kenDevXD/test/main"
-export Server1_URL="raw.githubusercontent.com/kenDevXD/limit/main"
+export Server_URL="raw.githubusercontent.com/mousethain/lengkap/main"
+export Server1_URL="raw.githubusercontent.com/mousethain/limit/main"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
-export Auther=".geovpn"
+export Auther=".mousevpn"
 
 # // Exporting Script Version
 export VERSION="1.1"
