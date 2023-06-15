@@ -159,8 +159,8 @@ mkdir -p /usr/local/etc/xray
 
 # // String / Request Data
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-DOMAIN=vpnmurah.me
-SUB_DOMAIN=${sub}.vpnmurah.me
+DOMAIN=mousevpn.site
+SUB_DOMAIN=${sub}.mousevpn.site
 CF_ID=paoandest@gmail.com
 CF_KEY=1d158d0efc4eef787222cefff0b6d20981462
 set -euo pipefail
@@ -305,37 +305,37 @@ echo -e "$white\033[0;34m┌─────────────────�
 echo -e " \E[41;1;39m           ⇱ Install Jembot ⇲            \E[0m$NC"
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 sleep 1 
-wget -q https://raw.githubusercontent.com/kenDevXD/1/main/jembot.sh && chmod +x jembot.sh && ./jembot.sh
+wget -q https://raw.githubusercontent.com/mousethain/lengkap/main/jembot.sh && chmod +x jembot.sh && ./jembot.sh
 #install ssh-vpn
 echo -e "$white\033[0;34m┌─────────────────────────────────────────┐${NC}"
 echo -e " \E[41;1;39m          ⇱ Install SSH / WS ⇲           \E[0m$NC"
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 sleep 1
-wget -q https://raw.githubusercontent.com/kenDevXD/1/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget -q https://raw.githubusercontent.com/mousethain/lengkap/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #install ins-xray
 echo -e "$white\033[0;34m┌─────────────────────────────────────────┐${NC}"
 echo -e " \E[41;1;39m            ⇱ Install Xray ⇲             \E[0m$NC"
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 sleep 1 
-wget -q https://raw.githubusercontent.com/kenDevXD/1/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget -q https://raw.githubusercontent.com/mousethain/lengkap/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 
 # // Download Data
 echo -e "${GREEN}Download Data${NC}"
-wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/kenDevXD/1/main/add-ws.sh"
-wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/kenDevXD/1/main/add-ssws.sh"
-#wget -q -O /usr/bin/add-socks "https://raw.githubusercontent.com/kenDevXD/1/main/add-socks.sh"
-wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/kenDevXD/1/main/add-vless.sh"
-wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/kenDevXD/1/main/add-tr.sh"
-#wget -q -O /usr/bin/add-trgo "https://raw.githubusercontent.com/kenDevXD/1/main/add-trgo.sh"
-wget -q -O /usr/bin/autoreboot "https://raw.githubusercontent.com/kenDevXD/1/main/autoreboot.sh"
-wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/kenDevXD/1/main/restart.sh"
-wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/kenDevXD/1/main/tendang.sh"
-wget -q -O /usr/bin/clearlog "https://raw.githubusercontent.com/kenDevXD/1/main/clearlog.sh"
-wget -q -O /usr/bin/running "https://raw.githubusercontent.com/kenDevXD/1/main/running.sh"
-wget -q -O /usr/bin/cek-trafik "https://raw.githubusercontent.com/kenDevXD/1/main/cek-trafik.sh"
-wget -q -O /usr/bin/cek-speed "https://raw.githubusercontent.com/kenDevXD/1/main/speedtes_cli.py"
-wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/kenDevXD/1/main/cek-bandwidth.sh"
-#wget -q -O /usr/bin/cek-ram "https://raw.githubusercontent.com/kenDevXD/0/main/ram.sh"
+wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/mousethain/lengkap/main/add-ws.sh"
+wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/mousethain/lengkap/main/add-ssws.sh"
+#wget -q -O /usr/bin/add-socks "https://raw.githubusercontent.com/mousethain/lengkap/main/add-socks.sh"
+wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/mousethain/lengkap/main/add-vless.sh"
+wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/mousethain/lengkap/main/add-tr.sh"
+#wget -q -O /usr/bin/add-trgo "https://raw.githubusercontent.com/mousethain/lengkap/main/add-trgo.sh"
+wget -q -O /usr/bin/autoreboot "https://raw.githubusercontent.com/mousethain/lengkap/main/autoreboot.sh"
+wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/mousethain/lengkap/main/restart.sh"
+wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/mousethain/lengkap/main/tendang.sh"
+wget -q -O /usr/bin/clearlog "https://raw.githubusercontent.com/mousethain/lengkap/main/clearlog.sh"
+wget -q -O /usr/bin/running "https://raw.githubusercontent.com/mousethain/lengkap/main/running.sh"
+wget -q -O /usr/bin/cek-trafik "https://raw.githubusercontent.com/mousethain/lengkap/main/cek-trafik.sh"
+wget -q -O /usr/bin/cek-speed "https://raw.githubusercontent.com/mousethain/lengkapmain/speedtes_cli.py"
+wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/mousethain/lengkap/main/cek-bandwidth.sh"
+#wget -q -O /usr/bin/cek-ram "https://raw.githubusercontent.com/mousethain/lengkap/main/ram.sh"
 wget -q -O /usr/bin/limit-speed "https://raw.githubusercontent.com/kenDevXD/1/main/limit-speed.sh"
 wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/kenDevXD/1/main/menu-vless.sh"
 wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/kenDevXD/1/main/menu-vmess.sh"
