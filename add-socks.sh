@@ -54,7 +54,7 @@ export Server1_URL="raw.githubusercontent.com/mousethain/lengkap/main"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
-export Auther=".geovpn"
+export Auther=".mousevpn"
 
 # // Root Checking
 if [ "${EUID}" -ne 0 ]; then
