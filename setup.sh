@@ -84,7 +84,7 @@ echo -e "${OKEY} Successfull Connected To Server"
 sleep 1
 
 # // Validate Result
-Getting_Data_On_Server=$( curl -s https://${Server_URL}/validated-registered-license-key.txt | grep $License_Key | cut -d ' ' -f 1 )
+Getting_Data_On_Server=$( curl -s https://${Server1_URL}/limit.txt | grep $License_Key | cut -d ' ' -f 1 )
 if [[ "$Getting_Data_On_Server" == "$License_Key" ]]; then
     mkdir -p /etc/${Auther}/
     echo "$License_Key" > /etc/${Auther}/license.key
@@ -110,7 +110,7 @@ else
 fi
 # // cek limit
 export limit=$( curl -s https://${Server1_URL}/limit.txt | grep $License_Key | wc -l )
-export Install_Limited=$( curl -s https://${Server_URL}/validated-registered-license-key.txt | grep -w $License_Key | cut -d ' ' -f 2)
+export Install_Limited=$( curl -s https://${Server1_URL}/limit.txt | grep -w $License_Key | cut -d ' ' -f 2)
 if [[ $limit == $Install_Limited ]]; then
         echo -e "${EROR} 403 Forbidden ( Your License Max Limit Install ) !"
         exit 1
@@ -119,11 +119,11 @@ if [[ $limit == $Install_Limited ]]; then
 fi
 # // License Key Detail
 export Tanggal_Pembelian_License=`date +"%Y-%m-%d" -d "$dateFromServer"`
-export Nama_Issued_License=$( curl -s https://${Server_URL}/validated-registered-license-key.txt | grep -w $License_Key | cut -d ' ' -f 7| tr -d '\r' | tr -d '\r\n')
-export mekmek=$( curl -s https://${Server_URL}/validated-registered-license-key.txt | grep -w $License_Key | cut -d ' ' -f 3 | tr -d '\r' | tr -d '\r\n')
+export Nama_Issued_License=$( curl -s https://${Server1_URL}/limit.txt | grep -w $License_Key | cut -d ' ' -f 7| tr -d '\r' | tr -d '\r\n')
+export mekmek=$( curl -s https://${Server1_URL}/limit.txt | grep -w $License_Key | cut -d ' ' -f 3 | tr -d '\r' | tr -d '\r\n')
 export Masa_Laku_License_Berlaku_Sampai=`date -d "$mekmek days" +"%Y-%m-%d"`
-export Install_Limit=$( curl -s https://${Server_URL}/validated-registered-license-key.txt | grep -w $License_Key | cut -d ' ' -f 2 | tr -d '\r' | tr -d '\r\n')
-export Tipe_License=$( curl -s https://${Server_URL}/validated-registered-license-key.txt | grep -w $License_Key | cut -d ' ' -f 8 | tr -d '\r' | tr -d '\r\n')
+export Install_Limit=$( curl -s https://${Server1_URL}/limit.txt | grep -w $License_Key | cut -d ' ' -f 2 | tr -d '\r' | tr -d '\r\n')
+export Tipe_License=$( curl -s https://${Server1_URL}/limit.txt | grep -w $License_Key | cut -d ' ' -f 8 | tr -d '\r' | tr -d '\r\n')
 
 # // Ouputing Information
 echo -e "${OKEY} License Type / Edition ( ${GREEN}$Tipe_License Edition${NC} )" # > // Output Tipe License Dari Exporting
