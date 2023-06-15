@@ -336,22 +336,22 @@ wget -q -O /usr/bin/cek-trafik "https://raw.githubusercontent.com/mousethain/len
 wget -q -O /usr/bin/cek-speed "https://raw.githubusercontent.com/mousethain/lengkapmain/speedtes_cli.py"
 wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/mousethain/lengkap/main/cek-bandwidth.sh"
 #wget -q -O /usr/bin/cek-ram "https://raw.githubusercontent.com/mousethain/lengkap/main/ram.sh"
-wget -q -O /usr/bin/limit-speed "https://raw.githubusercontent.com/kenDevXD/1/main/limit-speed.sh"
-wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/kenDevXD/1/main/menu-vless.sh"
-wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/kenDevXD/1/main/menu-vmess.sh"
-#wget -q -O /usr/bin/menu-socks "https://raw.githubusercontent.com/kenDevXD/1/main/menu-socks.sh"
-wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/kenDevXD/1/main/menu-ss.sh"
-wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/kenDevXD/1/main/menu-trojan.sh"
-#wget -q -O /usr/bin/menu-trgo "https://raw.githubusercontent.com/kenDevXD/1/main/menu-trgo.sh"
-wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/kenDevXD/1/main/menu-ssh.sh"
-#wget -q -O /usr/bin/menu-bckp "https://raw.githubusercontent.com/kenDevXD/1/main/menu-bckp-telegram.sh"
-wget -q -O /usr/bin/menu-bckp "https://raw.githubusercontent.com/kenDevXD/1/main/menu-bckp-github.sh"
-#wget -q -O /usr/bin/bckp "https://raw.githubusercontent.com/kenDevXD/1/main/bckpbot.sh"
-wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/kenDevXD/1/main/usernew.sh"
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/kenDevXD/1/main/menu.sh"
-wget -q -O /usr/bin/wbm "https://raw.githubusercontent.com/kenDevXD/1/main/webmin.sh"
-wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/kenDevXD/1/main/xp.sh"
-#wget -q -O /usr/bin/update "https://raw.githubusercontent.com/kenDevXD/1/main/update.sh"
+wget -q -O /usr/bin/limit-speed "https://raw.githubusercontent.com/mousethain/lengkap/main/limit-speed.sh"
+wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/mousethain/lengkap/main/menu-vless.sh"
+wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/mousethain/lengkap/main/menu-vmess.sh"
+#wget -q -O /usr/bin/menu-socks "https://raw.githubusercontent.com/mousethain/lengkap/main/menu-socks.sh"
+wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/mousethain/lengkap/main/menu-ss.sh"
+wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/mousethain/lengkap/main/menu-trojan.sh"
+#wget -q -O /usr/bin/menu-trgo "https://raw.githubusercontent.com/mousethain/lengkap/main/menu-trgo.sh"
+wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/mousethain/lengkap/main/menu-ssh.sh"
+#wget -q -O /usr/bin/menu-bckp "https://raw.githubusercontent.com/mousethain/lengkap/main/menu-bckp-telegram.sh"
+wget -q -O /usr/bin/menu-bckp "https://raw.githubusercontent.com/mousethain/lengkap/main/menu-bckp-github.sh"
+#wget -q -O /usr/bin/bckp "https://raw.githubusercontent.com/mousethain/lengkap/main/bckpbot.sh"
+wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/mousethain/lengkap/main/usernew.sh"
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/mousethain/lengkap/main/menu.sh"
+wget -q -O /usr/bin/wbm "https://raw.githubusercontent.com/mousethain/lengkap/main/webmin.sh"
+wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/mousethain/lengkap/main/xp.sh"
+#wget -q -O /usr/bin/update "https://raw.githubusercontent.com/mousethain/lengkap/main/update.sh"
 chmod +x /usr/bin/add-ws
 chmod +x /usr/bin/add-ssws
 #chmod +x /usr/bin/add-socks
@@ -442,23 +442,6 @@ gg="PM"
 else
 gg="AM"
 fi
-echo -e "[ ${green}Pleas Wait Update DB ${NC} ]"
-git clone https://github.com/kenDevXD/limit.git /root/limit/ &> /dev/null
-babu=$(cat /etc/.geovpn/license.key)
-echo -e "$babu $IP $Masa_Laku_License_Berlaku_Sampai" >> /root/limit/limit.txt
-cd /root/limit
-    git config --global user.email "zkendev@gmail.com" &> /dev/null
-    git config --global user.name "kenDevXD" &> /dev/null
-    rm -fr .git &> /dev/null
-    git init &> /dev/null
-    git add . &> /dev/null
-    git commit -m m &> /dev/null
-    git branch -M main &> /dev/null
-    git remote add origin https://github.com/kenDevXD/limit
-    git push -f https://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@github.com/kenDevXD/limit.git &> /dev/null
-cd
-echo "1.1" >> /home/.ver
-rm -fr /root/limit
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
 echo "=====================-[ Kenn Hiroyuki Premium ]-===================="
