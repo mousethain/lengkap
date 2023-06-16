@@ -444,7 +444,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ Kenn Hiroyuki Premium ]-===================="
+echo "=====================-[ mousevpn Premium ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -488,7 +488,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created By Kenn Hiroyuki ]-==============="
+echo "===============-[ mousevpn ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
