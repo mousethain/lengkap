@@ -95,13 +95,13 @@ chmod +x /etc/pam.d/common-password
 cd
 
 # Getting websocket dropbear
-#wget -q -O /usr/local/bin/ws-dropbear "https://raw.githubusercontent.com/wunuit/0/main/ws-dropbear"
+#wget -q -O /usr/local/bin/ws-dropbear "https://raw.githubusercontent.com/mousethain/lengkap/main/ws-dropbear"
 #chmod +x /usr/local/bin/ws-dropbear
 
 # Installing Service
 #cat > /etc/systemd/system/ws-dropbear.service << END
 #[Unit]
-#Description=Ssh Websocket By Akhir Zaman
+#Description=Ssh Websocket mousevpn
 #Documentation=https://xnxx.com
 #After=network.target nss-lookup.target
 
@@ -231,7 +231,7 @@ echo -ne
 fi
 cd
 echo -e "[ ${GREEN}INFO$NC ] Installing badvpn for game support..."
-#wget -q -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/wunuit/0/main/badvpn-udpgw64"
+#wget -q -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/mousethain/lengkap/main/badvpn-udpgw64"
 wget -q -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/mousethain/lengkap/main/newudpgw"
 chmod +x /usr/bin/badvpn-udpgw  >/dev/null 2>&1
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local >/dev/null 2>&1
@@ -370,7 +370,7 @@ systemctl restart stunnel5 >/dev/null 2>&1
 # Install bbr
 sleep 1
 echo -e "[ ${GREEN}INFO$NC ] Install bbr"
-#Optimasi Speed Mod By Akhir Zaman
+#Optimasi Speed Mod mousevpn
 Add_To_New_Line(){
 	if [ "$(tail -n1 $1 | wc -l)" == "0"  ];then
 		echo "" >> "$1"
