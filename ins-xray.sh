@@ -1,10 +1,4 @@
 #!/bin/bash
-# =========================================
-# Quick Setup | Script Setup Manager
-# Edition : Stable Edition V1.0
-# Auther  : Adit Ardiansyah
-# (C) Copyright 2022
-# =========================================
 # // Export Color & Information
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
