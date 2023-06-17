@@ -305,19 +305,19 @@ echo -e "$white\033[0;34m┌─────────────────�
 echo -e " \E[41;1;39m           ⇱ Install Jembot ⇲            \E[0m$NC"
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 sleep 1 
-wget https://raw.githubusercontent.com/mousethain/lengkap/main/jembot.sh && chmod +x jembot.sh && ./jembot.sh
+wget -q https://raw.githubusercontent.com/mousethain/lengkap/main/jembot.sh && chmod +x jembot.sh && ./jembot.sh
 #install ssh-vpn
 echo -e "$white\033[0;34m┌─────────────────────────────────────────┐${NC}"
 echo -e " \E[41;1;39m          ⇱ Install SSH / WS ⇲           \E[0m$NC"
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 sleep 1
-wget https://raw.githubusercontent.com/mousethain/lengkap/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget -q https://raw.githubusercontent.com/mousethain/lengkap/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #install ins-xray
 echo -e "$white\033[0;34m┌─────────────────────────────────────────┐${NC}"
 echo -e " \E[41;1;39m            ⇱ Install Xray ⇲             \E[0m$NC"
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 sleep 1 
-wget https://raw.githubusercontent.com/mousethain/lengkap/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget -q https://raw.githubusercontent.com/mousethain/lengkap/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 
 # // Download Data
 echo -e "${GREEN}Download Data${NC}"
